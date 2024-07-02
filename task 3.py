@@ -2,10 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-# Step 1: Follow tutorials to understand web scraping principles and techniques.
+
 # This example will demonstrate the basic principles.
 
-# Step 2: Develop a simple Python script to scrape data from a static web page.
+
 # For this example, let's scrape data from a sample web page.
 url = 'https://www.wikipedia.org/'  
 response = requests.get(url)
@@ -13,7 +13,7 @@ response = requests.get(url)
 if response.status_code == 200:
     soup = BeautifulSoup(response.content, 'html.parser')
     
-    # Step 3: Extract relevant information such as text, links, or images from web pages.
+
     # For demonstration, let's extract all the hyperlinks from the page.
     links = []
     for link in soup.find_all('a'):
